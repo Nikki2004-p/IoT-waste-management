@@ -9,7 +9,7 @@ const char* ssid = "your_wifi_ssid";
 const char* password = "your_wifi_password";
 
 // **Backend Server URL**
-const char* serverUrl = "https://iot-management.vercel.app/api/sensors/add";
+const char* serverUrl = "https://io-t-waste-management.vercel.app/api/sensors/add";
 
 // **Ultrasonic Sensor Pins**
 #define echoPin 13
