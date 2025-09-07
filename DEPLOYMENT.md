@@ -47,12 +47,11 @@ vercel --prod
 
 In Vercel Dashboard, add these environment variables:
 
-| Variable | Value | Required |
-|----------|-------|----------|
-| `MONGO_URI` | `mongodb+srv://username:password@cluster.mongodb.net/iot_waste_management?retryWrites=true&w=majority` | ✅ |
-| `JWT_SECRET` | `your-super-secure-jwt-secret-minimum-32-characters` | ✅ |
-| `NODE_ENV` | `production` | ✅ |
-| `PORT` | `5000` | ❌ |
+| Variable | Required |
+|----------|----------|
+| `MONGO_URI` | ✅ |
+| `JWT_SECRET` | ✅ |
+| `NODE_ENV` | ✅ |
 
 ### 5. GitHub Secrets (for CI/CD)
 
@@ -78,10 +77,7 @@ Add these secrets to your GitHub repository:
 5. **Get Connection String**: Database → Connect → Connect your application
 6. **Update Connection String**: Replace `<password>` with your user password
 
-Example connection string:
-```
-mongodb+srv://myuser:mypassword@cluster0.abc123.mongodb.net/iot_waste_management?retryWrites=true&w=majority
-```
+
 
 ## 🎯 Testing Your Deployment
 
