@@ -48,17 +48,7 @@ A comprehensive IoT waste management system with real-time sensor monitoring, us
 
 This project is configured for automatic deployment on Vercel with CI/CD.
 
-### Quick Deploy
 
-1. **Fork this repository**
-2. **Connect to Vercel** at [vercel.com](https://vercel.com)
-3. **Import your forked repository**
-4. **Set Environment Variables**:
-   ```
-   MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/iot_waste_management
-   JWT_SECRET=your-super-secure-jwt-secret-minimum-32-characters
-   NODE_ENV=production
-   ```
 5. **Deploy** - Push to main branch for automatic deployment
 
 ## 🛠️ Local Development
