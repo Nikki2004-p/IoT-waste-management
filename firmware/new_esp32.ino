@@ -5,8 +5,8 @@
 #include <time.h>
 
 // **WiFi Credentials**
-const char* ssid = "your_wifi_ssid";
-const char* password = "your_wifi_password";
+const char* ssid = "";
+const char* password = "";
 
 // **Backend Server URL**
 const char* serverUrl = "https://io-t-waste-management.vercel.app/api/sensors/add";
@@ -70,8 +70,8 @@ void loop() {
     duration = pulseIn(echoPin, HIGH, 20000);
     if (duration > 0) {
       distance = duration / 58.2;
-      if (distance > 14) distance = 14;
-      fillLevel = (1 - (float)distance / 14) * 100;
+      if (distance > 7) distance = 7;
+      fillLevel = (1 - (float)distance / 7) * 100;
       Serial.print("Fill Level: ");
       Serial.print(fillLevel);
       Serial.println("%");
